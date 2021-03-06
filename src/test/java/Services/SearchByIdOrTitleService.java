@@ -3,6 +3,10 @@ package Services;
 import Constants.Constants;
 import Models.SearchByIdOrTitleModel;
 import io.restassured.RestAssured;
+import io.restassured.internal.http.HttpResponseException;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 
 import java.util.List;
 

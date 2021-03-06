@@ -31,7 +31,11 @@ public class SearchByModel {
 
     @JsonProperty("imdbID")
     public String getImdbId() {
-        return imdbId;
+        if(imdbId!=null){
+
+            return imdbId;
+        }
+        else return "";
     }
 
     @JsonProperty("Poster")
